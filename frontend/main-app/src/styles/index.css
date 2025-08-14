@@ -1,0 +1,248 @@
+:root {
+  --primary: #1f2937;
+  --secondary: #d1d5db;
+  --accent: #8b5cf6;
+  --typing: #38eba0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+}
+a:hover {
+  color: #a78bfa;
+}
+
+/* Buttons */
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.btn-accent:hover {
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+}
+.btn-soft {
+  background: rgba(209, 213, 219, 0.08);
+  border: 1px solid rgba(209, 213, 219, 0.2);
+  color: var(--secondary);
+}
+.btn-soft:hover {
+  background: rgba(209, 213, 219, 0.16);
+}
+
+/* Cards on dark bg */
+.card-dark {
+  background: #111827;
+  color: var(--secondary);
+  border: 1px solid rgba(209, 213, 219, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Intro styles */
+.hero-title {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+.hero-subtitle {
+  color: #e5e7eb;
+  opacity: 0.9;
+}
+
+/* Simple fade-in on load */
+.reveal-on-load {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease both;
+}
+.reveal-on-load.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.flex-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbar */
+.navbar-dark-custom {
+  background: rgba(17, 24, 39, 0.85); /* near #111827 */
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(209, 213, 219, 0.12);
+}
+
+@media (max-width: 767.98px) {
+  main {
+    padding: 0 1rem;
+  }
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem !important;
+  }
+  .lead.hero-subtitle {
+    font-size: 1rem !important;
+  }
+  .display-4 {
+    font-size: 2.2rem !important;
+  }
+  .card-dark {
+    padding: 1.2rem !important;
+  }
+  .carousel-item h5 {
+    font-size: 1.1rem !important;
+  }
+  .carousel-item p {
+    font-size: 0.95rem !important;
+  }
+  .icon-scroll-row i {
+    font-size: 1.3em !important;
+  }
+  .section {
+    padding: 2rem 0 !important;
+  }
+}
+
+.typing-effect {
+  font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 1.1rem;
+  color: var(--typing);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--typing);
+  width: 0;
+  animation: typing-loop 3.4s steps(18, end) infinite,
+    blink-caret 0.7s step-end infinite;
+}
+
+@keyframes typing-loop {
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 18ch;
+  }
+  55% {
+    width: 18ch;
+  }
+  80% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: var(--typing);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.icon-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  height: 2.2em;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.icon-scroll-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  /* Duplicate icons for seamless loop */
+  animation: icon-scroll-continuous 14s linear infinite;
+  will-change: transform;
+}
+
+.icon-scroll-row i {
+  font-size: 2em;
+  opacity: 0.85;
+}
+
+@keyframes icon-scroll-continuous {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-skill-badge {
+  background: linear-gradient(90deg, var(--accent) 60%, #6d5cf6 100%);
+  color: #fff !important;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 2em;
+  box-shadow: 0 2px 8px 0 rgba(139, 92, 246, 0.1);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25em;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+.about-skill-badge:hover {
+  transform: scale(1.07);
+  background: linear-gradient(90deg, #a78bfa 60%, var(--accent) 100%);
+}
+
+.floating-image {
+  display: inline-block;
+  animation: floatY 3.5s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
