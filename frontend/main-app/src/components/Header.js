@@ -6,7 +6,9 @@ function Header() {
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
           <span className="text-light">Samuel</span>{" "}
-          <span style={{ color: "var(--accent)" }}>Iwelumo</span>
+          <span className="i-bounce" style={{ color: "var(--accent)" }}>
+            Iwelumo
+          </span>
         </Link>
 
         <button

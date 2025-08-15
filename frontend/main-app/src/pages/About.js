@@ -25,13 +25,13 @@ function About() {
                 and a drive for continuous improvement.
               </p>
               <div className="d-flex flex-wrap gap-2 mt-4">
-                <span className="about-skill-badge">JavaScript</span>
-                <span className="about-skill-badge">React</span>
-                <span className="about-skill-badge">Node.js</span>
-                <span className="about-skill-badge">Python</span>
-                <span className="about-skill-badge">SQL</span>
-                <span className="about-skill-badge">Docker</span>
-                <span className="about-skill-badge">Git</span>
+                <span className="s-badge">JavaScript</span>
+                <span className="s-badge">React</span>
+                <span className="s-badge">Node.js</span>
+                <span className="s-badge">Python</span>
+                <span className="s-badge">SQL</span>
+                <span className="s-badge">Docker</span>
+                <span className="s-badge">Git</span>
               </div>
             </div>
             <div className="col-lg-4 reveal-on-load delay-1">

@@ -46,9 +46,10 @@ function Home() {
                 </a>
                 <a
                   className="btn btn-soft"
-                  href="#"
+                  href="Samuel_Iwelumo_CV.docx"
+                  download
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Download Resume
                 </a>

@@ -6,7 +6,7 @@ function Footer() {
         <div className="row gy-3 align-items-center">
           <div className="col-md">
             <div className="text-secondary">
-              © {year} Samuel Iwelumo. All rights reserved.
+              Designed by Samuel Iwelumo. &copy; {year}
             </div>
           </div>
           <div className="col-md-auto">
