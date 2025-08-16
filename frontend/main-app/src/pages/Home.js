@@ -38,7 +38,7 @@ function Home() {
               <div className="d-flex gap-3">
                 <a
                   className="btn btn-accent"
-                  href="http://localhost:3001"
+                  href="https://portfolio.samueliwelumo.tech"
                   target="_blank"
                   rel="noreferrer"
                 >

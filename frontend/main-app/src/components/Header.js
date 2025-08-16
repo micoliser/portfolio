@@ -27,6 +27,16 @@ function Header() {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  "nav-link" + (isActive ? " active" : "")
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   "nav-link" + (isActive ? " active" : "")
@@ -68,7 +78,7 @@ function Header() {
             <li className="nav-item ms-lg-2">
               <a
                 className="btn btn-sm btn-accent"
-                href="http://localhost:3001"
+                href="https://portfolio.samueliwelumo.tech"
                 target="_blank"
                 rel="noreferrer"
               >
