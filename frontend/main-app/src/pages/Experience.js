@@ -86,7 +86,7 @@ function Experience() {
           </h2>
           <div className="row g-4 reveal-on-load">
             {experiences.map((exp, idx) => (
-              <div className="col-12" key={idx}>
+              <div className="col-12 col-md-6 col-lg-4" key={idx}>
                 <div
                   className="card card-dark h-100 p-4 position-relative exp-fade-in breathe"
                   style={{
@@ -94,18 +94,6 @@ function Experience() {
                     animationDelay: `${idx * 0.5}s, 0s`,
                   }}
                 >
-                  <div
-                    style={{
-                      position: "absolute",
-                      left: 0,
-                      top: 0,
-                      bottom: 0,
-                      width: "6px",
-                      background: "var(--accent)",
-                      borderRadius: "8px",
-                      opacity: 0.85,
-                    }}
-                  />
                   <div className="ms-4">
                     <div className="d-flex flex-wrap align-items-center mb-1">
                       <h5
@@ -118,7 +106,7 @@ function Experience() {
                         className="badge bg-secondary ms-1"
                         style={{
                           background: "var(--secondary)",
-                          color: "#222",
+                          color: "#2e2c2cff",
                           fontWeight: 600,
                         }}
                       >

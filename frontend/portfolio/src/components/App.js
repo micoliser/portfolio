@@ -1,8 +1,21 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Projects from "../pages/Projects";
+import NotFound from "../pages/NotFound";
+import Layout from "../pages/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Samuel Iwelumo</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Navigate replace to="/projects" />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

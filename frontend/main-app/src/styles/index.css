@@ -1,5 +1,5 @@
 :root {
-  --primary: #1f2937;
+  --primary: #172133;
   --secondary: #d1d5db;
   --accent: #8b5cf6;
   --typing: #38eba0;
@@ -34,9 +34,8 @@ a:hover {
 
 /* Buttons */
 .btn-accent {
-  background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--secondary);
 }
 .btn-accent:hover {
   background: #7c3aed;
@@ -54,7 +53,7 @@ a:hover {
 
 /* Cards on dark bg */
 .card-dark {
-  background: #111827;
+  background: #1f2937;
   color: var(--secondary);
   border: 1px solid rgba(209, 213, 219, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -105,9 +104,7 @@ a:hover {
 
 /* Navbar */
 .navbar-dark-custom {
-  background: rgba(17, 24, 39, 0.85); /* near #111827 */
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(209, 213, 219, 0.12);
 }
 
 @media (max-width: 767.98px) {
@@ -223,7 +220,6 @@ a:hover {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  /* Duplicate icons for seamless loop */
   animation: icon-scroll-continuous 14s linear infinite;
   will-change: transform;
 }
