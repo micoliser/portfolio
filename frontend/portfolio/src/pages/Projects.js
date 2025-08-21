@@ -16,7 +16,7 @@ function Projects() {
         "WebSocket",
         "MySQL",
       ],
-      github: "https://github.com/jesulayomy/mpt",
+      github: "",
       live: "https://iwanbuy.ng",
       images: [
         "images/iwanbuy/home.png",
@@ -32,7 +32,7 @@ function Projects() {
       description:
         "A responsive live vendor app for iWanBuy where vendors and admin and manage orders, products and customers. Features real-time order updates and customer support chat and more.",
       tech: ["React", "Bootstrap", "Flask", "Redis", "Socket.IO", "MySQL"],
-      github: "https://github.com/jesulayomy/mpt",
+      github: "",
       live: "https://vendor.iwanbuy.ng",
       images: [
         "images/iwanbuy-vendor/home.png",
@@ -55,7 +55,7 @@ function Projects() {
         "React",
         "Redis",
       ],
-      github: "https://github.com/micoliser/cryptex",
+      github: "",
       live: "",
       images: [
         "images/cryptex/home.png",
@@ -90,7 +90,7 @@ function Projects() {
         "A university management system for managing students, lecturers and courses. Features student registration, course management, password recovery and more.",
       tech: ["React", "Python", "Flask", "MySQL"],
       github: "https://github.com/micoliser/schub",
-      live: "",
+      live: "https://schub.samueliwelumo.tech",
     },
     {
       title: "LibZ",
@@ -106,14 +106,22 @@ function Projects() {
         "A blogging platform for creating and sharing posts. Features user authentication, Google OAuth, post creation and deletion, and more.",
       tech: ["OAuth", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/micoliser/blog-post",
-      live: "",
+      live: "https://blogpost.samueliwelumo.tech/",
     },
     {
       title: "Note Keeping App",
       description: "A note keeping app for creating and managing notes.",
       tech: ["React", "Node.js", "Express", "MongoDB"],
       github: "https://github.com/micoliser/note-keeping-app",
-      live: "",
+      live: "https://notes.samueliwelumo.tech/",
+    },
+    {
+      title: "STech",
+      description:
+        "A website created for info about my academy for learning web development skills.",
+      tech: ["HTML", "CSS", "Bootstrap"],
+      github: "",
+      live: "https://stech.samueliwelumo.tech",
     },
     {
       title: "Atom8 Stock Prices",
