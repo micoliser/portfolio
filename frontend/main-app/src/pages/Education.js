@@ -1,56 +1,6 @@
+import { certificates, awards } from "../utils/data";
+
 function Education() {
-  const certificates = [
-    {
-      name: "Full-Stack Software Engineering",
-      issuer: "ALX Africa",
-    },
-    {
-      name: "Full-Stack Software Development",
-      issuer: "Udemy",
-    },
-    {
-      name: "Intro to Machine Learning",
-      issuer: "Kaagle",
-    },
-    {
-      name: "Succeeding in Full-Stack Development",
-      issuer: "LinkedIn",
-    },
-    {
-      name: "JavaScript Essential Training",
-      issuer: "LinkedIn",
-    },
-    {
-      name: "Python Advanced",
-      issuer: "Bincom ICT",
-    },
-    {
-      name: "HTML Essential Training",
-      issuer: "LinkedIn",
-    },
-    {
-      name: "CSS Essential Training",
-      issuer: "LinkedIn",
-    },
-    {
-      name: "Excel Essential Training",
-      issuer: "LinkedIn",
-    },
-  ];
-
-  const awards = [
-    {
-      title: "ALX Code Shinobi Award",
-      description:
-        "Awarded for exceptional coding skills and contributions to the ALX community.",
-    },
-    {
-      title: "ALX Learning Ambassador",
-      description:
-        "Recognized for helping newer cohorts with difficult projects by tutoring and mentoring.",
-    },
-  ];
-
   return (
     <div className="flex-root" id="top">
       <section className="section flex-grow-1 d-flex align-items-center">
